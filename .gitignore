@@ -1,41 +1,446 @@
-# Compiled Lua sources
-luac.out
+-- Gui to Lua
+-- Version: 3.2
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+-- Instances:
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TitleOutline = Instance.new("TextLabel")
+local NameChanger = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ServerShutdown = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TimeFreeze = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local FeInfiniteYield = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ExtrasFrame = Instance.new("ImageLabel")
+local TitleOutline_2 = Instance.new("TextLabel")
+local CopyGame = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Loading = Instance.new("Frame")
+local Load = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local percent = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 
-# Precompiled Headers
-*.gch
-*.pch
+--Properties:
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.175249964, 0, 0.195682839, 0)
+Frame.Size = UDim2.new(0, 573, 0, 388)
+Frame.Visible = false
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(53, 151, 221)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+Frame.Active = true
+Frame.Draggable = true
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+TitleOutline.Name = "TitleOutline"
+TitleOutline.Parent = Frame
+TitleOutline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleOutline.BackgroundTransparency = 1.000
+TitleOutline.BorderColor3 = Color3.fromRGB(28, 80, 118)
+TitleOutline.BorderSizePixel = 0
+TitleOutline.Position = UDim2.new(0.0874223635, 0, -0.00220255926, 0)
+TitleOutline.Size = UDim2.new(0, 471, 0, 52)
+TitleOutline.Font = Enum.Font.FredokaOne
+TitleOutline.Text = "Cadestroyer_HubV1"
+TitleOutline.TextColor3 = Color3.fromRGB(28, 80, 118)
+TitleOutline.TextSize = 30.000
+TitleOutline.TextStrokeColor3 = Color3.fromRGB(28, 80, 118)
 
+NameChanger.Name = "NameChanger"
+NameChanger.Parent = Frame
+NameChanger.BackgroundColor3 = Color3.fromRGB(28, 80, 118)
+NameChanger.Position = UDim2.new(0.0515537001, 0, 0.270722002, 0)
+NameChanger.Size = UDim2.new(0, 200, 0, 50)
+NameChanger.Font = Enum.Font.FredokaOne
+NameChanger.Text = "Name changer"
+NameChanger.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameChanger.TextSize = 22.000
+NameChanger.MouseButton1Down:connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local NameChangerByMeNoNubmeN00b6740 = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+	local TextBox = Instance.new("TextBox")
+
+	--Properties:
+
+	NameChangerByMeNoNubmeN00b6740.Name = "Name Changer By MeNoNubmeN00b#6740"
+	NameChangerByMeNoNubmeN00b6740.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	Frame.Parent = NameChangerByMeNoNubmeN00b6740
+	Frame.Active = true
+	Frame.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+	Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.BorderSizePixel = 2
+	Frame.Position = UDim2.new(1, -125, 1, -85)
+	Frame.Size = UDim2.new(0, 120, 0, 30)
+	Frame.Active = true
+	Frame.Draggable = true
+
+	Title.Name = "Title"
+	Title.Parent = Frame
+	Title.Active = true
+	Title.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+	Title.BorderSizePixel = 2
+	Title.Size = UDim2.new(1, 0, 0.5, 0)
+	Title.Text = "Name Changer"
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextSize = 11.000
+	Title.TextStrokeTransparency = 0.000
+	Title.TextWrapped = true
+
+	TextBox.Parent = Frame
+	TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.BackgroundTransparency = 1.000
+	TextBox.Position = UDim2.new(0, 0, 0.5, 0)
+	TextBox.Size = UDim2.new(1, 0, 0.5, 0)
+	TextBox.Text = ""
+	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.TextSize = 11.000
+	TextBox.TextStrokeTransparency = 0.000
+	TextBox.TextWrapped = true
+
+	-- Scripts:
+
+	local function AALNIAA_fake_script() -- TextBox.LocalScript 
+		local script = Instance.new('LocalScript', TextBox)
+
+		script.Parent.FocusLost:connect(function(enter)
+			if enter then
+				v = game.Players.LocalPlayer
+				for a, mod in pairs(v.Character:children()) do
+					if mod:findFirstChild("NameTag") then
+						v.Character.Head.Transparency = 0 mod:Destroy()
+					end
+				end
+
+				local char = v.Character
+				local mod = Instance.new("Model", char)
+				mod.Name = script.Parent.Text
+				local cl = char.Head:Clone()
+				cl.Parent = mod
+
+				local hum = Instance.new("Humanoid", mod)
+				hum.Name = "NameTag"
+				hum.MaxHealth = 0
+				hum.Health = 0
+
+				local weld = Instance.new("Weld", cl) weld.Part0 = cl weld.Part1 = char.Head
+				char.Head.Transparency = 1
+			end
+		end)
+
+
+
+	end
+	coroutine.wrap(AALNIAA_fake_script)()
+	local function HIIUZO_fake_script() -- NameChangerByMeNoNubmeN00b6740.Script 
+		local script = Instance.new('Script', NameChangerByMeNoNubmeN00b6740)
+
+		print("FE Name Changer By MeNoNubmeN00b#6740")
+
+	end
+	coroutine.wrap(HIIUZO_fake_script)()
+end)
+
+UICorner.Parent = NameChanger
+
+ServerShutdown.Name = "ServerShutdown"
+ServerShutdown.Parent = Frame
+ServerShutdown.BackgroundColor3 = Color3.fromRGB(28, 80, 118)
+ServerShutdown.Position = UDim2.new(0.598784804, 0, 0.270721972, 0)
+ServerShutdown.Size = UDim2.new(0, 200, 0, 50)
+ServerShutdown.Font = Enum.Font.FredokaOne
+ServerShutdown.Text = "Server shutdown (Might Work)"
+ServerShutdown.TextColor3 = Color3.fromRGB(0, 0, 0)
+ServerShutdown.TextSize = 14.000
+ServerShutdown.MouseButton1Down:connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("ImageLabel")
+	local TextButton = Instance.new("TextButton")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ResetOnSpawn = false
+
+	Frame.Name = "Frame"
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+	Frame.BackgroundTransparency = 1.000
+	Frame.BorderColor3 = Color3.fromRGB(115, 115, 115)
+	Frame.Position = UDim2.new(0.374000013, 0, 0.381000012, 0)
+	Frame.Size = UDim2.new(0, 336, 0, 193)
+	Frame.Image = "rbxassetid://3570695787"
+	Frame.ImageColor3 = Color3.fromRGB(115, 115, 115)
+	Frame.ScaleType = Enum.ScaleType.Slice
+	Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+	Frame.SliceScale = 0.120
+	Frame.Active = true
+	Frame.Draggable = true
+
+	TextButton.Parent = Frame
+	TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BackgroundTransparency = 0.250
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0.0267857146, 0, 0.367943019, 0)
+	TextButton.Size = UDim2.new(0, 318, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = "Shutdown Server"
+	TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.TextSize = 30.000
+	TextButton.TextStrokeColor3 = Color3.fromRGB(61, 61, 61)
+	TextButton.MouseButton1Down:connect(function()
+		local player = game.Players:GetPlayers()
+
+		wait(1)
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= player then
+				v:Kick("Shutdown the server")
+			end
+		end
+	end)
+
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(0, 0, 0.07772021, 0)
+	TextLabel.Size = UDim2.new(0, 336, 0, 35)
+	TextLabel.Font = Enum.Font.FredokaOne
+	TextLabel.Text = "Made by MeNoNubmeN00b#6740"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 14.000
+end)
+
+UICorner_2.Parent = ServerShutdown
+
+TimeFreeze.Name = "TimeFreeze"
+TimeFreeze.Parent = Frame
+TimeFreeze.BackgroundColor3 = Color3.fromRGB(28, 80, 118)
+TimeFreeze.Position = UDim2.new(0.598784804, 0, 0.670413315, 0)
+TimeFreeze.Size = UDim2.new(0, 200, 0, 50)
+TimeFreeze.Font = Enum.Font.FredokaOne
+TimeFreeze.Text = "Time freeze press r"
+TimeFreeze.TextColor3 = Color3.fromRGB(0, 0, 0)
+TimeFreeze.TextSize = 22.000
+TimeFreeze.MouseButton1Down:connect(function()
+	_G.key = Enum.KeyCode.R
+	loadstring(game:HttpGet("https://paste.gg/p/anonymous/cb1c7198b269449eb8a2cf8ced061bed/files/4a98e88f82ee47388b3030a7f000b34e/raw", true))()
+end)
+
+UICorner_3.Parent = TimeFreeze
+
+FeInfiniteYield.Name = "FeInfiniteYield"
+FeInfiniteYield.Parent = Frame
+FeInfiniteYield.BackgroundColor3 = Color3.fromRGB(28, 80, 118)
+FeInfiniteYield.Position = UDim2.new(0.0515537001, 0, 0.670413375, 0)
+FeInfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+FeInfiniteYield.Font = Enum.Font.FredokaOne
+FeInfiniteYield.Text = "InfiniteYield"
+FeInfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeInfiniteYield.TextSize = 22.000
+FeInfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+UICorner_4.Parent = FeInfiniteYield
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.322416246, 0, 0.270721972, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "NON FE"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.Position = UDim2.new(0.311324149, 0, 0.670413375, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 1)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "FE"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+ExtrasFrame.Name = "ExtrasFrame"
+ExtrasFrame.Parent = Frame
+ExtrasFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtrasFrame.BackgroundTransparency = 1.000
+ExtrasFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExtrasFrame.Position = UDim2.new(1.08307707, 0, 0.580710351, 0)
+ExtrasFrame.Size = UDim2.new(0, 171, 0, 161)
+ExtrasFrame.Image = "rbxassetid://3570695787"
+ExtrasFrame.ImageColor3 = Color3.fromRGB(53, 151, 221)
+ExtrasFrame.ScaleType = Enum.ScaleType.Slice
+ExtrasFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExtrasFrame.SliceScale = 0.120
+ExtrasFrame.Active = true
+ExtrasFrame.Draggable = true
+
+TitleOutline_2.Name = "TitleOutline"
+TitleOutline_2.Parent = ExtrasFrame
+TitleOutline_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleOutline_2.BackgroundTransparency = 1.000
+TitleOutline_2.BorderColor3 = Color3.fromRGB(28, 80, 118)
+TitleOutline_2.BorderSizePixel = 0
+TitleOutline_2.Position = UDim2.new(0.00555098662, 0, -0.002202573, 0)
+TitleOutline_2.Size = UDim2.new(0, 170, 0, 52)
+TitleOutline_2.Font = Enum.Font.FredokaOne
+TitleOutline_2.Text = "Extras"
+TitleOutline_2.TextColor3 = Color3.fromRGB(28, 80, 118)
+TitleOutline_2.TextSize = 30.000
+TitleOutline_2.TextStrokeColor3 = Color3.fromRGB(28, 80, 118)
+
+CopyGame.Name = "CopyGame"
+CopyGame.Parent = ExtrasFrame
+CopyGame.BackgroundColor3 = Color3.fromRGB(28, 80, 118)
+CopyGame.Position = UDim2.new(0.126491934, 0, 0.28045994, 0)
+CopyGame.Size = UDim2.new(0, 129, 0, 70)
+CopyGame.Font = Enum.Font.FredokaOne
+CopyGame.Text = "Copy Game"
+CopyGame.TextColor3 = Color3.fromRGB(0, 0, 0)
+CopyGame.TextSize = 14.000
+CopyGame.MouseButton1Down:connect(function()
+	saveinstance()
+end)
+
+UICorner_5.Parent = CopyGame
+
+Loading.Name = "Loading"
+Loading.Parent = ScreenGui
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.Position = UDim2.new(0.313348413, 0, 0.358931571, 0)
+Loading.Size = UDim2.new(0, 329, 0, 169)
+
+Load.Name = "Load"
+Load.Parent = Loading
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BackgroundTransparency = 1.000
+Load.Position = UDim2.new(0.194528878, 0, 0.0473372787, 0)
+Load.Size = UDim2.new(0, 200, 0, 50)
+Load.Font = Enum.Font.TitilliumWeb
+Load.Text = "Loading"
+Load.TextColor3 = Color3.fromRGB(0, 0, 0)
+Load.TextScaled = true
+Load.TextSize = 14.000
+Load.TextWrapped = true
+
+UICorner_6.Parent = Load
+
+percent.Name = "percent"
+percent.Parent = Loading
+percent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+percent.BackgroundTransparency = 1.000
+percent.Position = UDim2.new(0.194528878, 0, 0.461538434, 0)
+percent.Size = UDim2.new(0, 200, 0, 50)
+percent.Font = Enum.Font.TitilliumWeb
+percent.Text = "0%"
+percent.TextColor3 = Color3.fromRGB(0, 0, 0)
+percent.TextScaled = true
+percent.TextSize = 14.000
+percent.TextWrapped = true
+
+UICorner_7.Parent = percent
+
+UICorner_8.Parent = Loading
+
+-- Scripts:
+
+local function VVEJRZ_fake_script() -- Frame.DraggableScript 
+	local script = Instance.new('Script', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(VVEJRZ_fake_script)()
+local function UJQT_fake_script() -- ExtrasFrame.DraggableScript 
+	local script = Instance.new('Script', ExtrasFrame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(UJQT_fake_script)()
+local function HXKDMCG_fake_script() -- ScreenGui.Credits 
+	local script = Instance.new('Script', ScreenGui)
+
+	print("cadestroyer_hubV1 executed ---made by MeNoNubmeN00b#6740 ---credits & help to omgcool2#9013")
+	--[[
+	credit dont delete or die rat
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	bobux
+	]]--
+end
+coroutine.wrap(HXKDMCG_fake_script)()
+local function DTZOG_fake_script() -- percent.LocalScript 
+	local script = Instance.new('LocalScript', percent)
+
+	script.Parent.Text = "2%"
+	wait(2)
+	script.Parent.Text = "12%"
+	wait(1)
+	script.Parent.Text = "32%"
+	wait(2)
+	script.Parent.Text = "54%"
+	wait(1)
+	script.Parent.Text = "82%"
+	wait(3)
+	script.Parent.Text = "100%"
+	wait(1)
+	script.Parent.Text = "Succesfully Loaded!"
+	wait(1)
+	script.Parent.Parent.Visible = false
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame.Visible = true
+end
+coroutine.wrap(DTZOG_fake_script)()
+local function UHTZJG_fake_script() -- Loading.DraggableScript 
+	local script = Instance.new('Script', Loading)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(UHTZJG_fake_script)()
